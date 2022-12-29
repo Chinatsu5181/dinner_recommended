@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+</html>
+<head>
+    <meta charset="utf-8">
+    <!-- cssファイルの読み込み -->
+    <link rel=stylesheet href="../static/css/style.css">
+    <!-- ファビコンの設定 -->
+    <link rel="icon" href="../static/images/favicon.ico">  <!-- あとで画像ダウンロードする -->
+
+    <title>ディナーおすすめ</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><!--CSSに作成する-->
+            <a href='templates/index.html' class="head">dinner recommended</a>
+        </div>
+
+        
+    </header>
+<!-- templateの継承部分 -->
+<!--この下にhtmlそれぞれの中身が入る（layout.htmlが主軸で使いまわされるイメージ）-->
+
+    {% block content %}
+    {% endblock %}
+<!-------------------->
+
+
+
+
+    <footer>
+        <div class="footer_logo">©︎ Nat5181_AI</div>        <!--CSSに作成する-->
+    </footer>
+
+</body>

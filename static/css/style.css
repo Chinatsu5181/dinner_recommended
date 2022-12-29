@@ -1,0 +1,205 @@
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+    background-color:#eae4e1;
+  }
+  
+  /* *********************************
+  headerの設定
+  *********************************** */
+  header {
+    height: 60px;
+    width: 100%;
+    padding: 0px 15px;
+    background-color: #cbbbb3;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  .logo {
+    font-size: 25px;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    color: #9b4b26;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    padding: 0 20px; 
+  }
+    
+  .head{
+
+    color: #9b4b26;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    
+    font-weight:bold;
+     color: transparent;
+    -webkit-text-stroke: 0.02em #9b4b26;
+  }
+
+
+  /* *********************************　
+mainの設定
+*********************************** */
+ main {
+    padding: 60px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    top: 0;
+  }
+
+
+.a_grid_type{
+	float: left;	
+	width: 100%;	
+	margin:0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.answer_box_long{
+    background: #eee;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color:#43342d;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.answer_box_long:hover {
+    background: #43342d;
+    color: #FFF;
+}
+
+.button003{
+    background: #eee;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button003:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003:hover:after {
+    border-color: #FFF;
+}
+
+/* *********************************　
+new.htmlの設定
+*********************************** */
+.info-text{
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+
+
+.info-text{
+  position:relative;
+  padding: 35px 20px 15px;
+  margin: 2.5em auto;
+  width: 90%;
+  color: #555555; /* 文字色 */
+  background-color: #e8ddbd;
+  box-shadow: inset 0 0 40px rgba(204, 186, 136,1), 0 2px 2px #ccc;
+  text-align: left;
+}
+
+
+
+
+
+/* *********************************　
+show.htmlの設定
+*********************************** */
+
+/*　テープ　枠　3 */
+.kakomi-tape3 {
+  position:relative;
+  padding: 35px 20px 15px;
+  margin: 2.5em auto;
+  width: 90%;
+  color: #555555; /* 文字色 */
+  background-color: #e8ddbd;
+  box-shadow: inset 0 0 40px rgba(204, 186, 136,1), 0 2px 2px #ccc;
+  text-align: left;
+ }
+ .title-tape3 {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  padding: 4px 20px;
+  color: #555555; /*タイトル色*/
+  font-weight: bold;
+  background-color: rgba(255,255,255,.4);
+  border-left: 2px dotted rgba(0,0,0,.1);
+  border-right: 2px dotted rgba(0,0,0,.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+  transform: rotate(-5deg);
+ }
+
+
+
+
+
+
+
+/* *********************************　
+footerの設定
+*********************************** */
+footer {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを指定 */
+
+    background:  #cbbbb3; /* 背景色を指定 */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .footer_logo {
+    color: #9b4b26;
+    line-height: 50px;
+  }

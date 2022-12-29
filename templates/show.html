@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <section id="second-block">
+    
+        <a id="id_page2">
+            <div class="mv_area">
+            <p class="pg_sv"></p>
+            <span></span>
+            </div>
+        </a>
+
+
+        <div class="kakomi-tape3">
+            <span class="title-tape3">AIが診断したおすすめは…</span>     
+                <span class="bold_text">
+                <b>{{recommendation[1]}}</b></span>
+                <br>
+                {{select1}}
+                <br>
+                📍{{recommendation[2]}}<!--場所-->
+                <br>
+                ジャンル：{{recommendation[3][0]}}<!--ジャンル（リストになってないから呼び出せない）-->
+                <br>
+                食べログ評価：{{recommendation[4]}}<!--評価-->          
+                <br>
+                <a href="{{recommendation[12]}}", target="_blank" rel="noopener noreferrer">
+                →食べログでお店をチェック！<!--URL-->  
+                </a>
+                <br>
+
+
+
+                <br>
+        </div> 
+
+
+    </section>
+
+</main>
+{% endblock %}

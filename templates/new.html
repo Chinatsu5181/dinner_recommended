@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!--ここでは、スクレイピングしたうちランダムで3つだす 写真アドレス例えば：https://tblg.k-img.com/restaurant/images/Rvw/141876/320x320_square_141876400.jpg-->
+ <!--   Second block Start   -->
+<main>
+ <section id="second-block">
+    <a id="id_page1">
+      <div class="mv_area">
+        <p class="pg_sv"></p>
+        <span>気になるお店をひとつ選択！</span>
+
+      </div>
+    </a>
+    <div class="about-container">
+
+      <form action="/show", method="POST">
+        
+        <div class="info-text">
+          <span class="title-tape3">choice1</span>   
+          <input type="radio" name="choice" value={{choice1_number}} id="answer_0">
+          <b>{{choice1[0]}}</b>
+          <br>
+          <span class="font-small">
+          📍{{choice1[1]}}<!--場所-->
+          <br>
+          ジャンル：{{choice1[2][0]}}<!--ジャンル（リストになってないから呼び出せない）-->
+          <br>
+          食べログ評価：{{choice1[3]}}<!--評価-->          
+          <br>
+          <a href="{{choice1[4]}}", target="_blank" rel="noopener noreferrer">
+          →食べログでお店をチェック！<!--URL-->   
+          </a> 
+          <br>
+
+          </span>
+        </div>
+
+        <div class="info-text">
+          <span class="title-tape3">choice2</span>   
+          <input type="radio" name="choice" value={{choice2_number}} id="answer_1">
+          <b>{{choice2[0]}}</b>
+          <br>
+          <span class="font-small">
+          📍{{choice2[1]}}
+          <br>
+          ジャンル：{{choice2[2][0]}}
+          
+          <br>
+          食べログ評価：{{choice2[3]}}<!--評価-->            
+          <br>
+          <a href="{{choice2[4]}}", target="_blank" rel="noopener noreferrer">
+          →食べログでお店をチェック！<!--URL--> 
+          </a>           
+          </span>
+        </div>
+
+        <div class="info-text">
+          <span class="title-tape3">choice3</span>   
+          <input type="radio" name="choice" value={{choice3_number}} id="answer_2">
+          <b>{{choice3[0]}}</b>
+          <br>
+          <span class="font-small">
+          📍{{choice3[1]}}
+          <br>
+          ジャンル：{{choice3[2][0]}}
+          <br>
+          食べログ評価：{{choice3[3]}}<!--評価-->  
+          <a href="{{choice3[4]}}", target="_blank" rel="noopener noreferrer">
+          →食べログでお店をチェック！<!--URL-->  
+          </a>          
+          </span>
+        </div>
+        <input type="hidden" name="hidden" value={{csv_show}}>
+
+        <button type="submit",name="csvfile" , class="button003">AIのおすすめは…</button>
+      </form>
+
+      
+    </div>
+  </section>
+  <!--   Second block End   -->
+</main>
+{% endblock %}

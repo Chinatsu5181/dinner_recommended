@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+{% block content %} 
+
+<!--index htmlないにname="place" value="URL"つくる-->
+
+<main>
+    <div class="container">     <!-- ここの中コピペだから解析必要 -->
+        
+        <!-- style="transform: translate3d(0px, 0px, 0px);" -->
+        <!-- <progress max="4", value="0", aria-valuenow="1", aria-valuemin="1", aria-valuemax="4"></progress> -->
+            <section class="qa_block" id="page0">
+                <a id="id_page0">
+                    <div class="mv_area">
+                    <p class="pg_sv"></p>
+                    <span>エリアを選択してください！</span>
+            
+                    </div>
+                </a>
+            
+                <div class="qa_grid">
+                    
+                    <form action="/new", method="POST"> 
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="csv/shibuya.csv" id="answer_1_6">
+                            <label for="answer_1_6" class="answer_rect_long">渋谷・恵比寿・代官山</label>
+                            </div>  
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="csv/nihonbashi.csv" id="answer_1_5">
+                            <label for="answer_1_5" class="answer_rect_long">東京・日本橋</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="csv/shibuya.csv" id="answer_1_4">
+                            <label for="answer_1_4" class="answer_rect_long">銀座・新橋・有楽町</label>
+                            </div>
+                        </div>
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="csv/shinjuku.csv" id="answer_1_3">
+                            <label for="answer_1_3" class="answer_rect_long">新宿・代々木・大久保</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="csv/takadanobaba.csv" id="answer_1_2">
+                            <label for="answer_1_2" class="answer_rect_long">池袋・高田馬場・早稲田</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="歴史" id="answer_1_1">
+                            <label for="answer_1_1" class="answer_rect_long">原宿・表参道・青山</label>
+                            </div>
+                        </div>
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="URLいれる" id="answer_1_6">
+                            <label for="answer_1_6" class="answer_rect_long">六本木・麻布・広尾</label>
+                            </div>  
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_5">
+                            <label for="answer_1_5" class="answer_rect_long">赤坂・永田町・溜池</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_4">
+                            <label for="answer_1_4" class="answer_rect_long">四ツ谷・市ヶ谷・飯田橋</label>
+                            </div>
+                        </div>
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="URLいれる" id="answer_1_6">
+                            <label for="answer_1_6" class="answer_rect_long">秋葉原・神田・水道橋</label>
+                            </div>  
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_5">
+                            <label for="answer_1_5" class="answer_rect_long">上野・浅草・日暮里</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_4">
+                            <label for="answer_1_4" class="answer_rect_long">浜松町・田町・品川</label>
+                            </div>
+                        </div>  
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="URLいれる" id="answer_1_6">
+                            <label for="answer_1_6" class="answer_rect_long">目黒・白金・五反田</label>
+                            </div>  
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_5">
+                            <label for="answer_1_5" class="answer_rect_long">大塚・巣鴨・駒込・赤羽</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_4">
+                            <label for="answer_1_4" class="answer_rect_long">両国・錦糸町・小岩</label>
+                            </div>
+                        </div>
+                        <div class="a_grid_type">
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="URLいれる" id="answer_1_6">
+                            <label for="answer_1_6" class="answer_rect_long">築地・湾岸・お台場</label>
+                            </div>  
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_5">
+                            <label for="answer_1_5" class="answer_rect_long">大井・蒲田</label>
+                            </div>
+                            <div class="answer_box_long">
+                            <input type="radio" name="place" value="" id="answer_1_4">
+                            <label for="answer_1_4" class="answer_rect_long">中野・西荻窪</label>
+                            </div>
+                        </div>    
+                        <button type="submit",value="送信", class="button003">つぎへ</button>                                                                 
+                    </form>
+        
+                </div>
+            </section>
+           
+                   
+    </div>
+</main>
+
+
+
+{% endblock %}
